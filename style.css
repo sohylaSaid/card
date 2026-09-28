@@ -1,0 +1,73 @@
+body{
+    background: linear-gradient(rgb(30, 36, 61),rgb(54, 54, 140));
+    color: white;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+header div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+header div span:last-child{
+    margin-left:20px ;
+}
+
+button{
+    background: rgb(58, 197, 210);
+    color: white;
+    padding: 6px 15px;
+    border:none;
+    border-radius: 10px;
+    font-size: medium;
+}
+
+button:hover{
+    background: rgb(31, 133, 143);
+}
+
+#gameboard{
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.card{
+    width: 100px;
+    height: 100px;
+    background: #0d8895;
+    border-radius: 15px;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    font-size: 45px;
+    cursor: pointer;
+    color: transparent;
+}
+
+.card.show{
+    background: white;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.card.matched{
+    background: rgb(37, 90, 39);
+    color: white;
+    cursor: default;
+}
